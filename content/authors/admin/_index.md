@@ -131,31 +131,31 @@ languages:
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
-  - title: ''
-    url: ''
-    date: ''
-    awarder: ''
-    icon: ''
-    summary: |
-      ''
-  - title: ''
-    url: ''
-    date: ''
-    awarder: ''
-    icon: ''
-    summary: |
-      ''
-  - title: ''
-    url: ''
-    certificate_url: ''
-    date: ''
-    awarder: ''
-    icon: ''
-    summary: |
-      ''
+# awards:
+#   - title: ''
+#     url: ''
+#     date: ''
+#     awarder: ''
+#     icon: ''
+#     summary: |
+#       ''
+#   - title: ''
+#     url: ''
+#     date: ''
+#     awarder: ''
+#     icon: ''
+#     summary: |
+#       ''
+#   - title: ''
+#     url: ''
+#     certificate_url: ''
+#     date: ''
+#     awarder: ''
+#     icon: ''
+#     summary: |
+#       ''
 ---
 
 ## About Me
 
-''
+A future PhD student in Biomedical imaging and Biophotonics. 
