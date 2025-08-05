@@ -54,14 +54,14 @@ interests:
 education:
   - area: Master of Science, Physics
     institution: University Paris Scalay
-    date_start: 2024-09
-    date_end: 2025-08
+    date_start: 2024-09-01
+    date_end: 2025-08-31
     summary: |
       Directly entered M2 - Physics, Engineering and Chemistry for Biology
   - area: Bachelor of Engineering, Opto-electronics Information Science and Engineering
     institution: Harbin Institute of Technology, Shenzhen
-    date_start: 2020-09
-    date_end: 2024-07
+    date_start: 2020-09-01
+    date_end: 2024-07-31
     summary: |
       Outstanding Graduate
       Outstanding Undergraduate Thesis
@@ -78,8 +78,8 @@ work:
     company_name: HITSZ Optical Imaging Lab
     company_url: ''
     company_logo: ''
-    date_start: 2021-08
-    date_end: 2024-07
+    date_start: 2021-08-01
+    date_end: 2024-07-31
     summary: |
       Research Topics: 
       - Spatially offsets measurement methods
