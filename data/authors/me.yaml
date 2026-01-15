@@ -82,15 +82,18 @@ skills:
       - label: " "
         level: 4
 languages:
-  - name: "English"
+  - name: "Chinese"
     level: 5
     label: "Native"
-  - name: "Spanish"
+  - name: "English"
     level: 4
     label: "Fluent"
+  - name: "French"
+    level: 1
+    label: " "
 awards:
-  - title: "Best Paper Award"
-    awarder: "NeurIPS"
-    date: "2022-12-01"
-    summary: "Awarded for groundbreaking work on efficient training of large models."
+  - title: "Outstanding Graduate"
+    awarder: "Harbin Institute of Technology"
+    date: "2024-06"
+    summary: " "
     icon: "hero/trophy"
