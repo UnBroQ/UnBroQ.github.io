@@ -1,10 +1,9 @@
 ---
-title: " "
-# date: '2017-01-01T00:00:00Z'
-date: ' '
+title: "Create Beautiful Presentations with Markdown"
+date: '2017-01-01T00:00:00Z'
 
-event_name: " "
-event_url: " "
+event_name: HugoBlox Showcase
+event_url: https://hugoblox.com
 
 location: Online & In-Person
 address:
