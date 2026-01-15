@@ -67,19 +67,19 @@ experience:
 skills:
   - name: "Technical Skills"
     items:
-      - label: "Python"
+      - label: " "
         level: 5
-      - label: "Machine Learning"
+      - label: " "
         level: 5
-      - label: "Cloud Computing"
+      - label: " "
         level: 4
   - name: "Research & Communication"
     items:
-      - label: "Academic Writing"
+      - label: " "
         level: 5
-      - label: "Conference Presentations"
+      - label: " "
         level: 4
-      - label: "Grant Proposals"
+      - label: " "
         level: 4
 languages:
   - name: "English"
