@@ -11,7 +11,7 @@ name:
 postnominals:
   - "PhD"
 status:
-  icon: "🧧"
+  icon: "🙌"
 role: "PhD Student - Biomedical Imaging & Optogenetics"
 bio: "Shuquan is a PhD student in Vision Institute, department Photonics.\n"
 affiliations:
@@ -22,6 +22,8 @@ links:
     label: "E-mail Me"
   - icon: "academicons/google-scholar"
     url: "https://scholar.google.com/citations?user=Rwitx4wAAAAJ&hl=zh-CN"
+  - icon: "academicons/researchgate"
+    url: "https://www.researchgate.net/profile/Shuquan-Xiao"
   - icon: "academicons/orcid"
     url: "https://orcid.org/0009-0001-1669-9253"
 interests:
