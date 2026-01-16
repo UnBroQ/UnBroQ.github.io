@@ -16,4 +16,11 @@ featured: true
 links:
 - name: URL
   url: https://opg.optica.org/ol/abstract.cfm?URI=ol-49-21-6097
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  focal_point: ""
+  preview_only: false
 ---
+
