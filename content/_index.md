@@ -42,11 +42,11 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I'm a PhD student in Wavefront Shaping Microscope Group/Department Photonics at Vision Institute·Sorbonne University. I will blog about biomedical imaging, optogenetics, opticaL design, biophotonics and anythinga about biomedical optical application here.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        My research focuses on scanless 2PE/3PE voltage imaging, deep tissue imaging, computational imaging, spatially offset measurement, multi-mode microscopy and non-invasive biomedical detection. 
 
-        Please reach out to collaborate 😃
+        Welcome to reach out if you are interested in my researches or you have any questions! 😃
     design:
       columns: '1'
   - block: collection
