@@ -12,7 +12,7 @@ publication_types:
 - conference
 publication: '*The 16th International Conference on Photonics and Imaging in Biology and Medicine*'
 # doi: 10.1364/OL.532793
-featured: false
+featured: ture
 links:
 - name: URL
   url: PIBM_post_Shuquan.pdf
