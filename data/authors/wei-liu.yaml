@@ -11,11 +11,11 @@ name:
 postnominals:
   - "PhD"
 status:
-  icon: "🙌"
-role: "PhD Student - Biomedical Imaging & Optogenetics"
-bio: "Shuquan is a PhD student in Vision Institute, department Photonics.\n"
+  icon: "👨‍🏫"
+role: "Associate Professor"
+bio: "Dr. Wei LIU is an Associate Professor in Faculty Information at Harbin Institute of Technology, Shenzhen.\n"
 affiliations:
-  - name: "Vision Institute · SORBONNE UNIVERSITE"
+  - name: "Harbin Institute of Technology, Shenzhen"
 links:
   - icon: "at-symbol"
     url: "mailto:alex.shuquanxiao@outlook.com"
@@ -27,75 +27,71 @@ links:
   - icon: "academicons/orcid"
     url: "https://orcid.org/0009-0001-1669-9253"
 interests:
+  - "Photoacoustic Imaging"
   - "Biomedical Imaging"
   - "Biophotonics"
-  - "Optogenetics"
-  - "Optical Application"
-education:
-  - degree: "PhD"
-    institution: "Vision Institute · SORBONNE UNIVERSITE"
-    start: "2026-01-01"
-    end: "Present"
-    button:
-      text: "Download dissertation"
-      url: "/resume.pdf"
-      icon: "hero/arrow-down-tray"
-  - degree: "MS, Physics"
-    institution: "University Paris Saclay"
-    start: "2024-09-01"
-    end: "2025-08-31"
-  - degree: "B.Eng, Opto-electronics Information Science and Engineering"
-    institution: "Harbin Institute of Technology, Shenzhen"
-    start: "2020-09-01"
-    end: "2024-07-31"
-experience:
-  - role: "PhD Student"
-    org: "Vision Institute"
-    start: "2026-01-01"
-    button:
-      text: "View portfolio"
-      url: "/"
-      icon: "hero/arrow-down-tray"
-  - role: "Scientific Trainee"
-    org: "EMBL"
-    start: "2025-03-01"
-    end: "2025-7-31"
-    summary: "worked on photoacoustic guided wavefront shaping and fluorescence imaging\n"
-  - role: "Undergraduate Research Assistant"
-    org: "HITsz Optical Imaging Lab"
-    start: "2021-08-01"
-    end: "2024-7-31"
-    summary: "worked on spatially offset measurement and coherent diffraction imaging\n"
-skills:
-  - name: "Technical Skills"
-    items:
-      - label: " "
-        level: 5
-      - label: " "
-        level: 5
-      - label: " "
-        level: 4
-  - name: "Research & Communication"
-    items:
-      - label: " "
-        level: 5
-      - label: " "
-        level: 4
-      - label: " "
-        level: 4
-languages:
-  - name: "Chinese"
-    level: 5
-    label: "Native"
-  - name: "English"
-    level: 4
-    label: "Fluent"
-  - name: "French"
-    level: 1
-    label: " "
-awards:
-  - title: "Outstanding Graduate"
-    awarder: "Harbin Institute of Technology"
-    date: "2024-06"
-    summary: " "
-    icon: "hero/trophy"
+# education:
+#   - degree: "PhD"
+#     institution: "Vision Institute · SORBONNE UNIVERSITE"
+#     start: "2026-01-01"
+#     end: "Present"
+#     button:
+#       text: "Download dissertation"
+#       url: "/resume.pdf"
+#       icon: "hero/arrow-down-tray"
+#   - degree: "MS, Physics"
+#     institution: "University Paris Saclay"
+#     start: "2024-09-01"
+#     end: "2025-08-31"
+#   - degree: "B.Eng, Opto-electronics Information Science and Engineering"
+#     institution: "Harbin Institute of Technology, Shenzhen"
+#     start: "2020-09-01"
+#     end: "2024-07-31"
+# experience:
+#   - role: "PhD Student"
+#     org: "Vision Institute"
+#     start: "2026-01-01"
+#     button:
+#       text: "View portfolio"
+#       url: "/"
+#       icon: "hero/arrow-down-tray"
+#   - role: "Scientific Trainee"
+#     org: "EMBL"
+#     start: "2025-03-01"
+#     end: "2025-7-31"
+#     summary: "worked on photoacoustic guided wavefront shaping and fluorescence imaging\n"
+#   - role: "Undergraduate Research Assistant"
+#     org: "HITsz Optical Imaging Lab"
+#     start: "2021-08-01"
+#     end: "2024-7-31"
+#     summary: "worked on spatially offset measurement and coherent diffraction imaging\n"
+# skills:
+#   - name: "Technical Skills"
+#     items:
+#       - label: " "
+#         level: 5
+#       - label: " "
+#         level: 5
+#       - label: " "
+#         level: 4
+#   - name: "Research & Communication"
+#     items:
+#       - label: " "
+#         level: 5
+#       - label: " "
+#         level: 4
+#       - label: " "
+#         level: 4
+# languages:
+#   - name: "Chinese"
+#     level: 5
+#     label: "Native"
+#   - name: "English"
+#     level: 4
+#     label: "Fluent"
+# awards:
+#   - title: "Outstanding Graduate"
+#     awarder: "Harbin Institute of Technology"
+#     date: "2024-06"
+#     summary: " "
+#     icon: "hero/trophy"
