@@ -18,7 +18,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: 下载简历
-        url: uploads/resume.pdf
+        url: static/uploads/resume.pdf
       headings:
         about: ''
         education: ''
