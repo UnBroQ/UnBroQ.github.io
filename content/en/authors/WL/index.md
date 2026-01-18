@@ -13,7 +13,7 @@ sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: Wei LIU
+      username: WL
       text: 'PhD'
       headings:
         about: ''
