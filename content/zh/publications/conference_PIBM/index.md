@@ -14,7 +14,7 @@ publication: '*The 16th International Conference on Photonics and Imaging in Bio
 # doi: 10.1364/OL.532793
 featured: ture
 links:
-- name: URL
+- name: See Poster
   url: PIBM_post_Shuquan.pdf
 
 # Featured image
