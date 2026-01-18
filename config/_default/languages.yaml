@@ -17,6 +17,16 @@ zh:
    description: Site description in Chinese...
  menu:
    main:
-     - name: 传
-       url: '#about'
-       weight: 1
+    - name: 简介
+      url: /
+      weight: 10
+    - name: 发表文章
+      url: /#fabiao
+      weight: 11
+    - name: 新闻
+      url: /#xinwen
+      weight: 13
+    - name: 个人经历
+      url: experience/
+      weight: 20
+
