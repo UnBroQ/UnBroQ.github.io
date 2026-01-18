@@ -1,7 +1,13 @@
 schema: "hugoblox/author/v1"
 slug: "wei-liu"
 is_owner: false
-name: "Wei Liu"
+name: 
+  display: "Wei LIU"
+  given: "Wei"
+  family: "LIU"
+  alternate: ""
+  pronunciation: ""
+  pronouns: "he/him"
 postnominals:
   - "PhD"
 status:
