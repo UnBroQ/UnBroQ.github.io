@@ -1,6 +1,6 @@
 schema: "hugoblox/author/v1"
 slug: "me_zh"
-is_owner: true
+is_owner: false
 name:
   display: "肖澍权"
   given: "澍权"

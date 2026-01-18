@@ -25,7 +25,7 @@ cover:
     name: "✨"
 
 authors:
-  - me
+  - me_zh
   - Ted
 
 tags:
