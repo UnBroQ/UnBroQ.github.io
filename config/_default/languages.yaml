@@ -21,12 +21,18 @@ zh:
       url: /
       weight: 10
     - name: 发表文章
-      url: /#fabiao
+      url: /#papers
       weight: 11
     - name: 新闻
-      url: /#xinwen
+      url: /#news
       weight: 13
     - name: 个人经历
       url: experience/
       weight: 20
+    # - name: Projects
+    #   url: projects/
+    #   weight: 30
+    # - name: Courses
+    #   url: courses/
+    #   weight: 40
 

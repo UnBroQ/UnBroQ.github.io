@@ -17,7 +17,7 @@ sections:
       text: ''
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download CV
+        text: 下载简历
         url: uploads/resume.pdf
       headings:
         about: ''
@@ -39,20 +39,18 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '📚 关于我的研究'
       subtitle: ''
       text: |-
-        I'm a PhD student in Wavefront Shaping Microscope Group/Department Photonics at Vision Institute·Sorbonne University. I will blog about biomedical imaging, optogenetics, opticaL design, biophotonics and anythinga about biomedical optical application here.
-
-        My research focuses on scanless 2PE/3PE voltage imaging, deep tissue imaging, computational imaging, spatially offset measurement, multi-mode microscopy and non-invasive biomedical detection. 
-
-        Welcome to reach out if you are interested in my researches or you have any questions! 😃
+        目前就任/就读于 巴黎视觉研究所光子系 / 索邦大学。我会在这里发表一些关于生物医学成像、光遗传学、光学设计、生物光子学以及任何关于生物医学光学应用的推文。
+        我的研究重点包括无扫描双光子/三光子激发电压成像、深层组织成像、计算成像、空间偏移测量、多模态显微镜和非侵入性生物医学检测。
+        如果你对我的研究感兴趣或有任何问题，欢迎随时联系！😃
     design:
       columns: '1'
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: 亮点文章
       filters:
         folders:
           - publications
@@ -62,7 +60,7 @@ sections:
       columns: 1
   - block: collection
     content:
-      title: Recent Publications
+      title: 近期发表文章
       text: ''
       filters:
         folders:
@@ -73,7 +71,7 @@ sections:
   - block: collection
     id: news
     content:
-      title: Recent News
+      title: 新闻
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...

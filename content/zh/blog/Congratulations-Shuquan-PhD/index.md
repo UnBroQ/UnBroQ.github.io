@@ -1,6 +1,6 @@
 ---
-title: 🎉 Congratulations! 
-summary: Shuquan starts his PhD life in Vision Institue! 
+title: 🎉 祝贺！ 
+summary: 开启博士生学术生涯！
 date: 2026-01-01
 
 # Featured image
@@ -35,7 +35,7 @@ content_meta:
   trending: true
 ---
 
-Welcome 👋
+🎉🎉🎉
 
 {{< toc mobile_only=true is_open=true >}}
 
