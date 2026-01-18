@@ -12,7 +12,7 @@ design:
 sections:
   - block: resume-experience
     content:
-      username: me
+      username: me_zh
     design:
       # Hugo date format
       date_format: 'January 2006'
@@ -25,9 +25,9 @@ sections:
   - block: resume-awards
     content:
       title: Awards
-      username: me
+      username: me_zh
   - block: resume-languages
     content:
       title: Languages
-      username: me
+      username: me_zh
 ---

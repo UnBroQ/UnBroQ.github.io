@@ -1,0 +1,101 @@
+schema: "hugoblox/author/v1"
+slug: "me_zh"
+is_owner: true
+name:
+  display: "肖澍权"
+  given: "澍权"
+  family: "肖"
+  alternate: ""
+  pronunciation: ""
+  pronouns: "he/him"
+postnominals:
+  - "博士研究生"
+status:
+  icon: "🙌"
+role: "博士研究生 - 生物医学成像及光遗传学"
+bio: "目前就读于索邦大学，是巴黎视觉研究所光子学部门的博士研究生。\n"
+affiliations:
+  - name: "视觉研究所 · 索邦大学"
+links:
+  - icon: "at-symbol"
+    url: "mailto:alex.shuquanxiao@outlook.com"
+    label: "E-mail Me"
+  - icon: "academicons/google-scholar"
+    url: "https://scholar.google.com/citations?user=Rwitx4wAAAAJ&hl=zh-CN"
+  - icon: "academicons/researchgate"
+    url: "https://www.researchgate.net/profile/Shuquan-Xiao"
+  - icon: "academicons/orcid"
+    url: "https://orcid.org/0009-0001-1669-9253"
+interests:
+  - "生物医学成像"
+  - "生物光子学"
+  - "光遗传学"
+  - "光学设计及其应用"
+education:
+  - degree: "博士"
+    institution: "视觉研究所 · 索邦大学"
+    start: "2026-01-01"
+    end: "Present"
+    button:
+      text: "查看毕业论文"
+      url: "/resume.pdf"
+      icon: "hero/arrow-down-tray"
+  - degree: "硕士，物理学/生物物理学"
+    institution: "巴黎萨克雷大学"
+    start: "2024-09-01"
+    end: "2025-08-31"
+  - degree: "学士，光电信息科学与工程"
+    institution: "哈尔滨工业大学（深圳校区）"
+    start: "2020-09-01"
+    end: "2024-07-31"
+experience:
+  - role: "博士研究生"
+    org: "巴黎视觉研究所"
+    start: "2026-01-01"
+    button:
+      text: "详情"
+      url: "/"
+      icon: "hero/arrow-down-tray"
+  - role: "科研实习生"
+    org: "欧洲分子生物实验室"
+    start: "2025-03-01"
+    end: "2025-7-31"
+    summary: "研究方向：光声导星波前整形及计算荧光成像\n"
+  - role: "科研助理"
+    org: "哈工大深圳光学成像实验室"
+    start: "2021-08-01"
+    end: "2024-7-31"
+    summary: "研究方向：空间偏移测量方法学及其应用，光学相干衍射成像\n"
+skills:
+  - name: "实用技能"
+    items:
+      - label: " "
+        level: 5
+      - label: " "
+        level: 5
+      - label: " "
+        level: 4
+  - name: "研究及交流"
+    items:
+      - label: " "
+        level: 5
+      - label: " "
+        level: 4
+      - label: " "
+        level: 4
+languages:
+  - name: "中文"
+    level: 5
+    label: "母语"
+  - name: "英语"
+    level: 4
+    label: "流利"
+  - name: "法语"
+    level: 1
+    label: "入门"
+awards:
+  - title: "优秀毕业生"
+    awarder: "哈尔滨工业大学"
+    date: "2024-06"
+    summary: " "
+    icon: "hero/trophy"
