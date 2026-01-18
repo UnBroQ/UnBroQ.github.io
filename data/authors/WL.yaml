@@ -1,10 +1,10 @@
 schema: "hugoblox/author/v1"
 slug: "WL"
-is_owner: false
+is_owner: ture
 name:
-  display: "Wei Liu"
+  display: "Wei LIU"
   given: "Wei"
-  family: "Liu"
+  family: "LIU"
   alternate: ""
   pronunciation: ""
   pronouns: "he/him"
