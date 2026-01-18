@@ -15,7 +15,7 @@ publication: '*The 16th International Conference on Photonics and Imaging in Bio
 featured: ture
 links:
 - name: URL
-  url: /workspaces/UnBroQ.github.io/content/en/publications/conference_PIBM/PIBM_post_Shuquan.pdf
+  url: https://UnBroQ.github.io/content/en/publications/conference_PIBM/PIBM_post_Shuquan.pdf
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
