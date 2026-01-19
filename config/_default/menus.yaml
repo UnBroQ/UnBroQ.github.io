@@ -19,9 +19,9 @@ main:
   - name: Experience
     url: experience/
     weight: 20
-  - name: Co-authors
-    url: members/
-    weight: 30
+  # - name: Co-authors
+  #   url: members/
+  #   weight: 30
   # - name: Projects
   #   url: projects/
   #   weight: 40
