@@ -3,7 +3,7 @@ title: Theoretical framework for calibrating the depth-dependent optical scatter
   in layered human skin using spatially offset measurements
 authors:
 - me
-- Yunxu Sun
+- yunxu-sun
 - Martha Vardaki
 - wei-liu
 date: '2024-11-01'

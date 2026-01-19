@@ -1,0 +1,28 @@
+schema: "hugoblox/author/v1"
+slug: "yunxu-sun"
+is_owner: false
+name: 
+  display: "Yunxu SUN"
+  given: "Yunxu"
+  family: "SUN"
+  alternate: ""
+  pronunciation: ""
+  pronouns: "he/him"
+postnominals:
+  - "PhD"
+status:
+  icon: "👨‍🏫"
+role: "Associate Professor"
+bio: "Dr. Yunxu SUN is an Associate Professor in Faculty Information at Harbin Institute of Technology, Shenzhen.\n"
+affiliations:
+  - name: "Harbin Institute of Technology, Shenzhen"
+links:
+  - icon: "at-symbol"
+    url: "mailto:alex.sunyunxu@hit.edu.cn"
+    label: "E-mail Me"
+  - icon: "academicons/google-scholar"
+    url: "https://scholar.google.com/citations?user=XuXt9OwAAAAJ&hl=en"
+  - icon: "academicons/researchgate"
+    url: "https://www.researchgate.net/profile/Yunxu-Sun"
+interests:
+  - " "

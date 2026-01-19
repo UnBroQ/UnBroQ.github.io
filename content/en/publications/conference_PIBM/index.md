@@ -2,10 +2,10 @@
 title: A Monte-Carlo simulation study of the depth-resolved backscattering photons in layered Human skin
 authors:
 - me
-- Yunxu Sun
+- yunxu-sun
 - Ting Ma
 - Zhengjun Liu
-- Wei Liu
+- wei-liu
 date: '2023-03-29'
 publishDate: '2026-01-16T10:23:02.178490Z'
 publication_types:
