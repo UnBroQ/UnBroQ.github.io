@@ -21,7 +21,7 @@ main:
     weight: 20
   - name: Co-authors
     url: members/
-    weight: 30
+    weight: 20
   # - name: Projects
   #   url: projects/
   #   weight: 30
