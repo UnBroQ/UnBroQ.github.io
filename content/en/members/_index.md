@@ -11,7 +11,7 @@ design:
 sections:
   - block: collection
     content:
-      title: Members
+      title: Top Co-authors
       filters:
         folders:
           - members
@@ -19,12 +19,13 @@ sections:
       view: article-grid
       fill_image: false
       columns: 3
+      rows: 2
       show_date: false
       show_read_time: false
       show_read_more: false
   - block: collection
     content:
-      title: Test
+      title: Others
       filters:
         folders:
           - members
