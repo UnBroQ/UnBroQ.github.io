@@ -1,14 +1,12 @@
 ---
-title: Test
-date: 2023-10-26
+title: Wei LIU
+date: 2024-11-01
 type: landing
 # links:
 #   - type: site
 #     url: https://github.com/pytorch/pytorch
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+  - HITSZ
 
 design:
   # Default section spacing
