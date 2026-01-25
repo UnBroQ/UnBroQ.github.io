@@ -15,9 +15,10 @@ sections:
       filters:
         folders:
           - members
+        type: "postdoc"
     design:
       view: article-grid
-      fill_image: ture
+      fill_image: true
       columns: 3
       rows: 2
       show_date: false
@@ -29,6 +30,7 @@ sections:
       filters:
         folders:
           - members
+        type: "phd"
     design:
       view: article-grid
       fill_image: false
