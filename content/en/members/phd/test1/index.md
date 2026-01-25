@@ -1,12 +1,14 @@
 ---
-title: Wei LIU
-date: 2024-11-01
+title: Test
+date: 2023-10-26
 type: landing
 # links:
 #   - type: site
 #     url: https://github.com/pytorch/pytorch
 tags:
-  - HITSZ
+  - Hugo
+  - HugoBlox
+  - Markdown
 
 design:
   # Default section spacing
@@ -16,7 +18,7 @@ sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: wei-liu
+      username: example
       text: ''
       headings:
         about: ''

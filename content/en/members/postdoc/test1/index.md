@@ -18,7 +18,7 @@ sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: wei-liu
+      username: example
       text: ''
       headings:
         about: ''

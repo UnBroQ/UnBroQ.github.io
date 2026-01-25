@@ -1,0 +1,30 @@
+schema: "hugoblox/author/v1"
+slug: "example"
+is_owner: false
+name: 
+  display: "PRENOM NOM"
+  given: "PRENOM"
+  family: "NOM"
+  alternate: ""
+  pronunciation: ""
+  pronouns: "he/him"
+postnominals:
+  - "PhD"
+status:
+  icon: "👨‍🏫"
+role: "Associate Professor"
+bio: "example introduction\n"
+affiliations:
+  - name: "MIT"
+links:
+  - icon: "at-symbol"
+    url: "mailto:alex.example@example.cn"
+    label: "E-mail Me"
+  - icon: "academicons/google-scholar"
+    url: " "
+  - icon: "academicons/researchgate"
+    url: " "
+interests:
+  - "Photoacoustic Imaging"
+  - "Biomedical Imaging"
+  - "Biophotonics"
