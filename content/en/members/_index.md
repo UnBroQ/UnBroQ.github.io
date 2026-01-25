@@ -13,7 +13,7 @@ sections:
     content:
       title: Post-doc
       filters:
-        path: /members/postdoc
+        path: /en/members/postdoc
     design:
       view: article-grid
       fill_image: true
