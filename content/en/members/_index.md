@@ -14,7 +14,7 @@ sections:
       title: Post-doc
       filters:
         folders:
-          - postdoc
+          - members
     design:
       view: article-grid
       fill_image: ture
@@ -28,7 +28,7 @@ sections:
       title: PhD Student
       filters:
         folders:
-          - phd
+          - members
     design:
       view: article-grid
       fill_image: false
