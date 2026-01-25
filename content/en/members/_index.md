@@ -13,8 +13,7 @@ sections:
     content:
       title: Post-doc
       filters:
-        folders:
-          path: /members/postdoc
+        path: /members/postdoc
     design:
       view: article-grid
       fill_image: true
@@ -27,8 +26,7 @@ sections:
     content:
       title: PhD Student
       filters:
-        folders:
-          path: /members/phd
+        path: /members/phd
     design:
       view: article-grid
       fill_image: false
