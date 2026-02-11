@@ -10,9 +10,9 @@ authors:
 - Robert Prevedel
 date: '2026-02-01'
 publishDate: '2026-02-11T10:23:02.178490Z'
-publication: arxiv
+publication: arXiv
 publication_types:
-- preprint
+- article-preprint
 featured: ture
 links:
 - name: URL
