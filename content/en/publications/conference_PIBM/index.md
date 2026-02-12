@@ -9,7 +9,7 @@ authors:
 date: '2023-03-29'
 publishDate: '2026-01-16T10:23:02.178490Z'
 publication_types:
-- conference
+- Conference
 publication: '*The 16th International Conference on Photonics and Imaging in Biology and Medicine*'
 # doi: 10.1364/OL.532793
 featured: ture
