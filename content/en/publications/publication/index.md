@@ -12,7 +12,7 @@ publication_types:
 - article-journal
 publication: '*Optics Letters*'
 doi: 10.1364/OL.532793
-featured: true
+featured: false
 links:
 - name: URL
   url: https://opg.optica.org/ol/abstract.cfm?URI=ol-49-21-6097
