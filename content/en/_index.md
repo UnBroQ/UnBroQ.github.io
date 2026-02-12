@@ -60,6 +60,7 @@ sections:
     design:
       view: article-grid
       columns: 1
+      rows: 2
   - block: collection
     content:
       title: Recent Publications
