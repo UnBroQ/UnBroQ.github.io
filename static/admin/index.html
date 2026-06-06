@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Website Admin</title>
+    <style>
+      .push-panel {
+        position: fixed;
+        z-index: 10000;
+        top: 12px;
+        right: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        max-width: min(420px, calc(100vw - 24px));
+        padding: 8px;
+        border: 1px solid #d0d7de;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+        color: #24292f;
+        font: 13px/1.4 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .push-panel button {
+        min-height: 32px;
+        padding: 0 12px;
+        border: 1px solid #1f883d;
+        border-radius: 6px;
+        background: #1f883d;
+        color: #fff;
+        font: inherit;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .push-panel button:disabled {
+        border-color: #8c959f;
+        background: #8c959f;
+        cursor: wait;
+      }
+
+      .push-panel span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="push-panel">
+      <button id="push-button" type="button">Push to GitHub</button>
+      <span id="push-status">Local push server checking...</span>
+    </div>
+    <script src="https://unpkg.com/decap-cms@^3.6.0/dist/decap-cms.js"></script>
+    <script>
+      const pushButton = document.getElementById("push-button");
+      const pushStatus = document.getElementById("push-status");
+      const pushServer = "http://127.0.0.1:8787";
+
+      async function checkPushServer() {
+        try {
+          const response = await fetch(`${pushServer}/status`);
+          const data = await response.json();
+
+          if (!data.ok) throw new Error(data.error || "Unknown status error");
+
+          pushStatus.textContent = data.status ? "Local changes ready to push." : "No local changes.";
+          pushButton.disabled = false;
+        } catch (error) {
+          pushStatus.textContent = "Start visual-edit.ps1 to enable push.";
+          pushButton.disabled = true;
+        }
+      }
+
+      pushButton.addEventListener("click", async () => {
+        const confirmed = window.confirm("Commit all local changes and push them to origin/main?");
+        if (!confirmed) return;
+
+        pushButton.disabled = true;
+        pushStatus.textContent = "Pushing...";
+
+        try {
+          const response = await fetch(`${pushServer}/push`, { method: "POST" });
+          const data = await response.json();
+
+          if (!response.ok || !data.ok) {
+            throw new Error(data.error || "Push failed");
+          }
+
+          pushStatus.textContent = data.pushed ? "Pushed to GitHub." : data.message;
+        } catch (error) {
+          pushStatus.textContent = error.message;
+        } finally {
+          pushButton.disabled = false;
+        }
+      });
+
+      checkPushServer();
+      window.setInterval(checkPushServer, 15000);
+    </script>
+  </body>
+</html>

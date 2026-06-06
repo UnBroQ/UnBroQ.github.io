@@ -1,0 +1,123 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "home"
+    label: "Home Pages"
+    files:
+      - name: "english_home"
+        label: "English Home"
+        file: "content/en/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Summary", name: "summary", widget: "string", required: false }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Type", name: "type", widget: "hidden", default: "landing" }
+          - { label: "Design", name: "design", widget: "object", required: false, fields: [{ label: "Spacing", name: "spacing", widget: "string", required: false }] }
+          - { label: "Sections", name: "sections", widget: "list", collapsed: true, fields: [{ label: "Block", name: "block", widget: "string" }, { label: "ID", name: "id", widget: "string", required: false }, { label: "Content", name: "content", widget: "object", required: false, fields: [{ label: "Title", name: "title", widget: "string", required: false }, { label: "Subtitle", name: "subtitle", widget: "string", required: false }, { label: "Text", name: "text", widget: "markdown", required: false }] }, { label: "Design", name: "design", widget: "object", required: false, fields: [{ label: "View", name: "view", widget: "string", required: false }, { label: "Columns", name: "columns", widget: "string", required: false }] }] }
+      - name: "chinese_home"
+        label: "Chinese Home"
+        file: "content/zh/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Summary", name: "summary", widget: "string", required: false }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Type", name: "type", widget: "hidden", default: "landing" }
+          - { label: "Design", name: "design", widget: "object", required: false, fields: [{ label: "Spacing", name: "spacing", widget: "string", required: false }] }
+          - { label: "Sections", name: "sections", widget: "list", collapsed: true, fields: [{ label: "Block", name: "block", widget: "string" }, { label: "ID", name: "id", widget: "string", required: false }, { label: "Content", name: "content", widget: "object", required: false, fields: [{ label: "Title", name: "title", widget: "string", required: false }, { label: "Subtitle", name: "subtitle", widget: "string", required: false }, { label: "Text", name: "text", widget: "markdown", required: false }] }, { label: "Design", name: "design", widget: "object", required: false, fields: [{ label: "View", name: "view", widget: "string", required: false }, { label: "Columns", name: "columns", widget: "string", required: false }] }] }
+
+  - name: "authors"
+    label: "Author Profiles"
+    files:
+      - name: "me"
+        label: "English Profile"
+        file: "data/authors/me.yaml"
+        fields:
+          - { label: "Schema", name: "schema", widget: "hidden", default: "hugoblox/author/v1" }
+          - { label: "Slug", name: "slug", widget: "hidden", default: "me" }
+          - { label: "Is Owner", name: "is_owner", widget: "boolean", default: true }
+          - { label: "Name", name: "name", widget: "object", fields: [{ label: "Display", name: "display", widget: "string" }, { label: "Given", name: "given", widget: "string", required: false }, { label: "Family", name: "family", widget: "string", required: false }, { label: "Alternate", name: "alternate", widget: "string", required: false }, { label: "Pronunciation", name: "pronunciation", widget: "string", required: false }, { label: "Pronouns", name: "pronouns", widget: "string", required: false }] }
+          - { label: "Postnominals", name: "postnominals", widget: "list", required: false }
+          - { label: "Status", name: "status", widget: "object", required: false, fields: [{ label: "Icon", name: "icon", widget: "string", required: false }] }
+          - { label: "Role", name: "role", widget: "string", required: false }
+          - { label: "Bio", name: "bio", widget: "text", required: false }
+          - { label: "Affiliations", name: "affiliations", widget: "list", required: false, fields: [{ label: "Name", name: "name", widget: "string" }] }
+          - { label: "Links", name: "links", widget: "list", required: false, fields: [{ label: "Icon", name: "icon", widget: "string", required: false }, { label: "URL", name: "url", widget: "string" }, { label: "Label", name: "label", widget: "string", required: false }] }
+          - { label: "Interests", name: "interests", widget: "list", required: false }
+          - { label: "Education", name: "education", widget: "list", required: false, fields: [{ label: "Degree", name: "degree", widget: "string" }, { label: "Institution", name: "institution", widget: "string" }, { label: "Start", name: "start", widget: "string", required: false }, { label: "End", name: "end", widget: "string", required: false }] }
+          - { label: "Experience", name: "experience", widget: "list", required: false, fields: [{ label: "Role", name: "role", widget: "string" }, { label: "Organization", name: "org", widget: "string" }, { label: "Start", name: "start", widget: "string", required: false }, { label: "End", name: "end", widget: "string", required: false }, { label: "Summary", name: "summary", widget: "text", required: false }] }
+          - { label: "Languages", name: "languages", widget: "list", required: false, fields: [{ label: "Name", name: "name", widget: "string" }, { label: "Level", name: "level", widget: "number", required: false }, { label: "Label", name: "label", widget: "string", required: false }] }
+          - { label: "Awards", name: "awards", widget: "list", required: false, fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Awarder", name: "awarder", widget: "string", required: false }, { label: "Date", name: "date", widget: "string", required: false }, { label: "Summary", name: "summary", widget: "text", required: false }] }
+      - name: "me_zh"
+        label: "Chinese Profile"
+        file: "data/authors/me_zh.yaml"
+        fields:
+          - { label: "Raw YAML", name: "body", widget: "text", required: false }
+
+  - name: "english_blog"
+    label: "English Blog"
+    folder: "content/en/blog"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  - name: "chinese_blog"
+    label: "Chinese Blog"
+    folder: "content/zh/blog"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  - name: "english_publications"
+    label: "English Publications"
+    folder: "content/en/publications"
+    path: "{{slug}}/index"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", required: false }
+      - { label: "Publication Types", name: "publication_types", widget: "list", required: false }
+      - { label: "Authors", name: "authors", widget: "list", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", required: false, default: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Abstract", name: "abstract", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  - name: "chinese_publications"
+    label: "Chinese Publications"
+    folder: "content/zh/publications"
+    path: "{{slug}}/index"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", required: false }
+      - { label: "Publication Types", name: "publication_types", widget: "list", required: false }
+      - { label: "Authors", name: "authors", widget: "list", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", required: false, default: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Abstract", name: "abstract", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
