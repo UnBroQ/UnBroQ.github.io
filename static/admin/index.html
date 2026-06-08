@@ -9,8 +9,9 @@
       .push-panel {
         position: fixed;
         z-index: 10000;
-        right: 12px;
-        bottom: 12px;
+        top: auto !important;
+        right: 12px !important;
+        bottom: 12px !important;
         display: flex;
         align-items: center;
         gap: 8px;
@@ -58,7 +59,14 @@
     <script>
       const pushButton = document.getElementById("push-button");
       const pushStatus = document.getElementById("push-status");
+      const pushPanel = document.querySelector(".push-panel");
       const pushServer = "http://127.0.0.1:8787";
+
+      if (pushPanel) {
+        pushPanel.style.setProperty("top", "auto", "important");
+        pushPanel.style.setProperty("right", "12px", "important");
+        pushPanel.style.setProperty("bottom", "12px", "important");
+      }
 
       async function checkPushServer() {
         try {
