@@ -1,6 +1,7 @@
 param(
   [int]$Port = 1313,
-  [switch]$InstallLoreStudio
+  [switch]$InstallLoreStudio,
+  [switch]$NoRestart
 )
 
 $ErrorActionPreference = "Stop"
@@ -34,6 +35,30 @@ function Repair-TailwindShim {
       [System.IO.File]::WriteAllText($TailwindBin, $ExpectedShim, $Utf8NoBom)
     }
   }
+}
+
+function Stop-RepoProcess($Label, $Pattern) {
+  $Processes = Get-CimInstance Win32_Process |
+    Where-Object {
+      $_.CommandLine -like $Pattern -and
+      $_.CommandLine -like "*$RepoRoot*"
+    }
+
+  foreach ($Process in $Processes) {
+    Write-Host "Stopping existing $Label process $($Process.ProcessId)..."
+    Stop-Process -Id $Process.ProcessId -Force -ErrorAction SilentlyContinue
+  }
+}
+
+function Restart-ExistingServices {
+  if ($NoRestart) {
+    return
+  }
+
+  Stop-RepoProcess "Hugo" "*hugo server*"
+  Stop-RepoProcess "Decap CMS" "*decap-server*"
+  Stop-RepoProcess "Git push server" "*git-push-server.ps1*"
+  Start-Sleep -Seconds 1
 }
 
 function Start-DecapServer {
@@ -126,6 +151,7 @@ if (-not (Test-Path (Join-Path $RepoRoot "node_modules"))) {
 }
 
 Repair-TailwindShim
+Restart-ExistingServices
 Start-DecapServer
 Start-GitPushServer
 
@@ -158,7 +184,8 @@ if (Test-Command "code") {
 }
 
 $PreviewUrl = "http://localhost:$Port"
-$AdminUrl = "http://localhost:$Port/admin/"
+$CacheBust = [DateTimeOffset]::Now.ToUnixTimeSeconds()
+$AdminUrl = "http://localhost:$Port/admin/?v=$CacheBust"
 Write-Host "Opening preview: $PreviewUrl"
 Open-Url $PreviewUrl
 Write-Host "Opening visual editor: $AdminUrl"
